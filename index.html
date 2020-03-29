@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-03-29 Sun 21:57 -->
+<!-- 2020-03-29 Sun 22:33 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Réseau social cryptographique</title>
@@ -234,44 +234,44 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org8d934ad">1. Introduction</a></li>
-<li><a href="#orge049989">2. Pourquoi un autre réseau social</a>
+<li><a href="#org84dd6e2">1. Introduction</a></li>
+<li><a href="#org4fd2c67">2. Pourquoi un autre réseau social</a>
 <ul>
-<li><a href="#org79cfeeb">2.1. Une base simple</a></li>
-<li><a href="#orgeab9266">2.2. Une base saine</a></li>
-<li><a href="#orgccf3faa">2.3. Tester des idées</a></li>
+<li><a href="#orge20a273">2.1. Une base simple</a></li>
+<li><a href="#org73f8e53">2.2. Une base saine</a></li>
+<li><a href="#org8c352a6">2.3. Tester des idées</a></li>
 </ul>
 </li>
-<li><a href="#org10c994e">3. Le réseau social cryptographique</a>
+<li><a href="#org7bc6a2e">3. Le réseau social cryptographique</a>
 <ul>
-<li><a href="#org977c19b">3.1. Objets</a>
+<li><a href="#org0c6e766">3.1. Objets</a>
 <ul>
-<li><a href="#org1c566e4">3.1.1. Utilisateur</a></li>
-<li><a href="#orgee36ecf">3.1.2. Message</a></li>
-<li><a href="#orgf358dda">3.1.3. Evenement</a></li>
-<li><a href="#orga323305">3.1.4. Communauté</a></li>
+<li><a href="#org0662455">3.1.1. Utilisateur</a></li>
+<li><a href="#orge947419">3.1.2. Message</a></li>
+<li><a href="#orga9b759e">3.1.3. Evenement</a></li>
+<li><a href="#org3633eb6">3.1.4. Communauté</a></li>
 </ul>
 </li>
-<li><a href="#org4aafb82">3.2. Technologies</a>
+<li><a href="#orgcfc484c">3.2. Technologies</a>
 <ul>
-<li><a href="#org2e69abd">3.2.1. Chiffrement</a></li>
-<li><a href="#org7a11f50">3.2.2. Authentification</a></li>
-<li><a href="#org2d4b61f">3.2.3. Fonction de hachage cryptographie</a></li>
-<li><a href="#orgf767e92">3.2.4. Arbre cryptographique</a></li>
-<li><a href="#org9f8d820">3.2.5. Clés de chiffrement et de déchiffrement</a></li>
-<li><a href="#org48c045e">3.2.6. Clés de chiffrement uniquement</a></li>
-<li><a href="#org55797a4">3.2.7. Clés d'authentification et de vérification</a></li>
+<li><a href="#org557e361">3.2.1. Chiffrement</a></li>
+<li><a href="#org22383c3">3.2.2. Authentification</a></li>
+<li><a href="#org7b42893">3.2.3. Fonction de hachage cryptographie</a></li>
+<li><a href="#org78e8483">3.2.4. Arbre cryptographique</a></li>
+<li><a href="#orga3b6166">3.2.5. Clés de chiffrement et de déchiffrement</a></li>
+<li><a href="#orgdaa46b8">3.2.6. Clés de chiffrement uniquement</a></li>
+<li><a href="#org851683a">3.2.7. Clés d'authentification et de vérification</a></li>
 </ul>
 </li>
-<li><a href="#orgb734440">3.3. Messages</a></li>
+<li><a href="#org14b52c3">3.3. Messages</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org8d934ad" class="outline-2">
-<h2 id="org8d934ad"><span class="section-number-2">1</span> Introduction</h2>
+<div id="outline-container-org84dd6e2" class="outline-2">
+<h2 id="org84dd6e2"><span class="section-number-2">1</span> Introduction</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 Avec l'arrivée d'internet, la société n'a cessé de se copier-coller dans ce nouvel espace.
@@ -296,12 +296,12 @@ Son potentiel : Aider à recoder l'information pour décoder le réél.
 </div>
 
 
-<div id="outline-container-orge049989" class="outline-2">
-<h2 id="orge049989"><span class="section-number-2">2</span> Pourquoi un autre réseau social</h2>
+<div id="outline-container-org4fd2c67" class="outline-2">
+<h2 id="org4fd2c67"><span class="section-number-2">2</span> Pourquoi un autre réseau social</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org79cfeeb" class="outline-3">
-<h3 id="org79cfeeb"><span class="section-number-3">2.1</span> Une base simple</h3>
+<div id="outline-container-orge20a273" class="outline-3">
+<h3 id="orge20a273"><span class="section-number-3">2.1</span> Une base simple</h3>
 <div class="outline-text-3" id="text-2-1">
 <ul class="org-ul">
 <li>Pour pouvoir plus simplement s'assurer de ses propriétés mathématiques</li>
@@ -312,8 +312,8 @@ Son potentiel : Aider à recoder l'information pour décoder le réél.
 </div>
 
 
-<div id="outline-container-orgeab9266" class="outline-3">
-<h3 id="orgeab9266"><span class="section-number-3">2.2</span> Une base saine</h3>
+<div id="outline-container-org73f8e53" class="outline-3">
+<h3 id="org73f8e53"><span class="section-number-3">2.2</span> Une base saine</h3>
 <div class="outline-text-3" id="text-2-2">
 <ul class="org-ul">
 <li>Un réseau social créé et appartenant à ses utilisateurs</li>
@@ -323,8 +323,8 @@ Son potentiel : Aider à recoder l'information pour décoder le réél.
 </div>
 
 
-<div id="outline-container-orgccf3faa" class="outline-3">
-<h3 id="orgccf3faa"><span class="section-number-3">2.3</span> Tester des idées</h3>
+<div id="outline-container-org8c352a6" class="outline-3">
+<h3 id="org8c352a6"><span class="section-number-3">2.3</span> Tester des idées</h3>
 <div class="outline-text-3" id="text-2-3">
 <ul class="org-ul">
 <li>Utiliser des règles mathématiques et cryptographiques pour la gestion des droits de lecture et de modification
@@ -336,16 +336,16 @@ au lieu de déleguer cette tache à un serveur tiers.</li>
 </div>
 
 
-<div id="outline-container-org10c994e" class="outline-2">
-<h2 id="org10c994e"><span class="section-number-2">3</span> Le réseau social cryptographique</h2>
+<div id="outline-container-org7bc6a2e" class="outline-2">
+<h2 id="org7bc6a2e"><span class="section-number-2">3</span> Le réseau social cryptographique</h2>
 <div class="outline-text-2" id="text-3">
 </div>
-<div id="outline-container-org977c19b" class="outline-3">
-<h3 id="org977c19b"><span class="section-number-3">3.1</span> Objets</h3>
+<div id="outline-container-org0c6e766" class="outline-3">
+<h3 id="org0c6e766"><span class="section-number-3">3.1</span> Objets</h3>
 <div class="outline-text-3" id="text-3-1">
 </div>
-<div id="outline-container-org1c566e4" class="outline-4">
-<h4 id="org1c566e4"><span class="section-number-4">3.1.1</span> Utilisateur</h4>
+<div id="outline-container-org0662455" class="outline-4">
+<h4 id="org0662455"><span class="section-number-4">3.1.1</span> Utilisateur</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 C'est l'avatar d'un utilisateur sur la platforme.
@@ -354,7 +354,7 @@ C'est l'avatar d'un utilisateur sur la platforme.
 
 
 <ol class="org-ol">
-<li><a id="org45011a5"></a>Pseudo/Email/Identifiant<br />
+<li><a id="org3b36cc3"></a>Pseudo/Email/Identifiant<br />
 <div class="outline-text-5" id="text-3-1-1-1">
 <p>
 C'est un outil permettant à la platforme de reconnaitre ses utilisateurs.
@@ -372,7 +372,7 @@ Il est seulement intéressant pour l'utilisateur de choisir sous quel nom il app
 </li>
 
 
-<li><a id="orgdcecef3"></a>Mot de passe<br />
+<li><a id="orgc53d8f1"></a>Mot de passe<br />
 <div class="outline-text-5" id="text-3-1-1-2">
 <p>
 C'est un outil permettant à la platforme de reconnaitre ses utilisateurs.
@@ -389,8 +389,8 @@ different pour chaque platforme qu'il utilise.
 </div>
 
 
-<div id="outline-container-orgee36ecf" class="outline-4">
-<h4 id="orgee36ecf"><span class="section-number-4">3.1.2</span> Message</h4>
+<div id="outline-container-orge947419" class="outline-4">
+<h4 id="orge947419"><span class="section-number-4">3.1.2</span> Message</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <p>
 C'est le ciment du réseau social et sa fonction.
@@ -399,8 +399,8 @@ C'est le ciment du réseau social et sa fonction.
 </div>
 
 
-<div id="outline-container-orgf358dda" class="outline-4">
-<h4 id="orgf358dda"><span class="section-number-4">3.1.3</span> Evenement</h4>
+<div id="outline-container-orga9b759e" class="outline-4">
+<h4 id="orga9b759e"><span class="section-number-4">3.1.3</span> Evenement</h4>
 <div class="outline-text-4" id="text-3-1-3">
 <p>
 C'est une singularité du réseau. Une bulle qui contient ses propres membres et surtout ses propres messages.
@@ -409,8 +409,8 @@ C'est une singularité du réseau. Une bulle qui contient ses propres membres et
 </div>
 
 
-<div id="outline-container-orga323305" class="outline-4">
-<h4 id="orga323305"><span class="section-number-4">3.1.4</span> Communauté</h4>
+<div id="outline-container-org3633eb6" class="outline-4">
+<h4 id="org3633eb6"><span class="section-number-4">3.1.4</span> Communauté</h4>
 <div class="outline-text-4" id="text-3-1-4">
 <p>
 C'est un regroupement d'avatars, d'évenements et de messages.
@@ -420,19 +420,19 @@ C'est un regroupement d'avatars, d'évenements et de messages.
 </div>
 
 
-<div id="outline-container-org4aafb82" class="outline-3">
-<h3 id="org4aafb82"><span class="section-number-3">3.2</span> Technologies</h3>
+<div id="outline-container-orgcfc484c" class="outline-3">
+<h3 id="orgcfc484c"><span class="section-number-3">3.2</span> Technologies</h3>
 <div class="outline-text-3" id="text-3-2">
 </div>
-<div id="outline-container-org2e69abd" class="outline-4">
-<h4 id="org2e69abd"><span class="section-number-4">3.2.1</span> Chiffrement</h4>
+<div id="outline-container-org557e361" class="outline-4">
+<h4 id="org557e361"><span class="section-number-4">3.2.1</span> Chiffrement</h4>
 <div class="outline-text-4" id="text-3-2-1">
 <p>
 Un message peut ou non être chiffré par l'utilisateur.
 </p>
 
 <p>
-Permet de se passer d'un tiers pour distribuer l'information.
+Permet de se passer d'un tiers pour controller l'accès à l'information.
 </p>
 
 <p>
@@ -442,8 +442,8 @@ Un chiffrement cryptographique garanti que seul les possesseurs de la clé de d�
 </div>
 
 
-<div id="outline-container-org7a11f50" class="outline-4">
-<h4 id="org7a11f50"><span class="section-number-4">3.2.2</span> Authentification</h4>
+<div id="outline-container-org22383c3" class="outline-4">
+<h4 id="org22383c3"><span class="section-number-4">3.2.2</span> Authentification</h4>
 <div class="outline-text-4" id="text-3-2-2">
 <p>
 Un message peut ou non être signé par l'utilisateur.
@@ -460,8 +460,8 @@ Une signature cryptographique prouve que ce message a bien été envoyé par l'u
 </div>
 
 
-<div id="outline-container-org2d4b61f" class="outline-4">
-<h4 id="org2d4b61f"><span class="section-number-4">3.2.3</span> Fonction de hachage cryptographie</h4>
+<div id="outline-container-org7b42893" class="outline-4">
+<h4 id="org7b42893"><span class="section-number-4">3.2.3</span> Fonction de hachage cryptographie</h4>
 <div class="outline-text-4" id="text-3-2-3">
 <p>
 Une fonction de hachage cryptographie donne l'<b>empreinte cryptographique</b> d'un message.
@@ -482,8 +482,8 @@ Il n'est pas possible de retrouver le message seulement à partir de son emprein
 </div>
 
 
-<div id="outline-container-orgf767e92" class="outline-4">
-<h4 id="orgf767e92"><span class="section-number-4">3.2.4</span> Arbre cryptographique</h4>
+<div id="outline-container-org78e8483" class="outline-4">
+<h4 id="org78e8483"><span class="section-number-4">3.2.4</span> Arbre cryptographique</h4>
 <div class="outline-text-4" id="text-3-2-4">
 <p>
 Un <b>arbre cryptographique</b> utilise une <b>graine cryptographique</b> pour générer
@@ -493,8 +493,8 @@ un ensemble de branches et feuilles qui peuvent toutes être utilisés comme <b>
 </div>
 
 
-<div id="outline-container-org9f8d820" class="outline-4">
-<h4 id="org9f8d820"><span class="section-number-4">3.2.5</span> Clés de chiffrement et de déchiffrement</h4>
+<div id="outline-container-orga3b6166" class="outline-4">
+<h4 id="orga3b6166"><span class="section-number-4">3.2.5</span> Clés de chiffrement et de déchiffrement</h4>
 <div class="outline-text-4" id="text-3-2-5">
 <p>
 Une <b>clé cryptographique</b> est un moyen de chiffrer (crypter) ou de déchiffrer des données.
@@ -511,8 +511,8 @@ Ses possesseurs forment donc le groupe ayant le pouvoir de lire les messages chi
 </div>
 
 
-<div id="outline-container-org48c045e" class="outline-4">
-<h4 id="org48c045e"><span class="section-number-4">3.2.6</span> Clés de chiffrement uniquement</h4>
+<div id="outline-container-orgdaa46b8" class="outline-4">
+<h4 id="orgdaa46b8"><span class="section-number-4">3.2.6</span> Clés de chiffrement uniquement</h4>
 <div class="outline-text-4" id="text-3-2-6">
 <p>
 Une <b>clé de déchiffrement asymétrique</b> permet de génerer la <b>clé de chiffrement asymétrique</b> correspondante.
@@ -533,8 +533,8 @@ Seul le (ou les) possesseur(s) de la <b>clé de déchiffrement</b> correspondant
 </div>
 
 
-<div id="outline-container-org55797a4" class="outline-4">
-<h4 id="org55797a4"><span class="section-number-4">3.2.7</span> Clés d'authentification et de vérification</h4>
+<div id="outline-container-org851683a" class="outline-4">
+<h4 id="org851683a"><span class="section-number-4">3.2.7</span> Clés d'authentification et de vérification</h4>
 <div class="outline-text-4" id="text-3-2-7">
 <p>
 Une <b>clé de signature cryptographique</b> de permet d'authentifier un message.
@@ -552,8 +552,8 @@ La <b>clé de vérification</b> peut être partagée afin de rendre possible la 
 </div>
 
 
-<div id="outline-container-orgb734440" class="outline-3">
-<h3 id="orgb734440"><span class="section-number-3">3.3</span> Messages</h3>
+<div id="outline-container-org14b52c3" class="outline-3">
+<h3 id="org14b52c3"><span class="section-number-3">3.3</span> Messages</h3>
 <div class="outline-text-3" id="text-3-3">
 <ul class="org-ul">
 <li>Un message <b>en clair</b> est publiquement lisible.</li>
@@ -572,7 +572,7 @@ Aucune information n'est disponible pour savoir quelle clé peut le déchiffrer.
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2020-03-29 Sun 21:57</p>
+<p class="date">Created: 2020-03-29 Sun 22:33</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
