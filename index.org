@@ -1,5 +1,6 @@
 #+TITLE: Index
 #+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
+#+OPTIONS: toc:nil
 
 * [[file:introduction.html][Introduction]]
 * [[file:exploration.html][Exploration]]
