@@ -1,6 +1,6 @@
 #+TITLE: Index
 #+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
 
-* [[introduction.html][Introduction]]
-* [[exploration.html][Exploration]]
-* [[propositions.html][Propositions]]
+* [[file:introduction.html][Introduction]]
+* [[file:exploration.html][Exploration]]
+* [[file:propositions.html][Propositions]]
