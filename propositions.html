@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-03-30 Mon 11:41 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Propositions</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link href="solarized-dark.min.css" rel="stylesheet"></link>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Propositions</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orge8ef3f4">1. Cryptographie</a>
+<ul>
+<li><a href="#org32dba60">1.1. Trustless</a></li>
+<li><a href="#org6eed077">1.2. Types de messages</a></li>
+<li><a href="#org645100c">1.3. Types d'adresses</a></li>
+<li><a href="#orge041c7a">1.4. Comptes (arbres)</a></li>
+</ul>
+</li>
+<li><a href="#org56ac0f7">2. Interfaces</a></li>
+<li><a href="#orgf0bdf33">3. Vrac</a>
+<ul>
+<li><a href="#org225cadf">3.1. Ne pas s'intéresser au transfert ni au stockage des données</a></li>
+<li><a href="#org08316dc">3.2. Données immutables</a></li>
+<li><a href="#org571d777">3.3. Optimistic CRDT</a></li>
+<li><a href="#orgbf03957">3.4. Gaussian filter to query the server</a></li>
+<li><a href="#orgcaba7a0">3.5. Programmed message</a></li>
+<li><a href="#orgea8cd15">3.6. Systemes</a>
+<ul>
+<li><a href="#org06c6a2b">3.6.1. Systeme 0</a></li>
+<li><a href="#org7aab48b">3.6.2. Systeme 1</a></li>
+<li><a href="#org85acfd6">3.6.3. Systeme 2</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge8ef3f4" class="outline-2">
+<h2 id="orge8ef3f4"><span class="section-number-2">1</span> Cryptographie</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org32dba60" class="outline-3">
+<h3 id="org32dba60"><span class="section-number-3">1.1</span> Trustless</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+Nous ne devrions pas avoir besoin de faire confiance au serveur
+pour ne pas lire et analyser nos message.
+</p>
+
+<p>
+Il devrait donc être impossible à un tiers de lire, ou modifier
+notre flux de communication. Pour cela nous utiliseront la cryptographie.
+</p>
+
+<p>
+Les données chiffrés devraient pouvoir être ouvertes à tous
+sans que cela puisse nous compromettre.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org6eed077" class="outline-3">
+<h3 id="org6eed077"><span class="section-number-3">1.2</span> Types de messages</h3>
+<div class="outline-text-3" id="text-1-2">
+<p>
+Chaque utilisateur ayant des besoins spécifiques
+</p>
+
+<p>
+Nous aurons différent types de messages, par exemple :
+</p>
+
+<ul class="org-ul">
+<li>En clair: contenu public</li>
+<li>Zero: pas de métadata (exemples: bitmessage, minilock)</li>
+<li>Direct: Message to public key (M2PK)</li>
+<li>Satoshi: Message to public key hash (M2PKH)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org645100c" class="outline-3">
+<h3 id="org645100c"><span class="section-number-3">1.3</span> Types d'adresses</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Chaque utilisateur ayant des besoins spécifiques
+</p>
+
+<p>
+Nous aurons donc différent types d'adresses, ainsi que
+différent types d'encodage.
+</p>
+
+<p>
+Types d'adresses :
+</p>
+
+<ul class="org-ul">
+<li>Clé publique</li>
+<li>Empreinte de clé publique (ex: SFGAftzSTztFSB8LMwsrdCKTyqGY6zr3sU).
+Est plus court qu'une clé publique, et ne la divulgue pas.</li>
+<li>Pseudo grace avec un système de 'DNS'</li>
+</ul>
+
+<p>
+Types d'encodages :
+</p>
+
+<ul class="org-ul">
+<li>Binary</li>
+<li>Base58</li>
+<li>Suite de mots (ex: give input convince decide dizzy tag flash spawn)</li>
+<li>QR Code</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orge041c7a" class="outline-3">
+<h3 id="orge041c7a"><span class="section-number-3">1.4</span> Comptes (arbres)</h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Nous utiliserons une graine cryptographie comme un arbre infini
+générant un flux infini et infiniment dichotomisable d'adresses et de clés.
+</p>
+
+<p>
+Certaines clés serviront à destocker (en dechiffrant) certaines
+informations chiffrés.
+</p>
+
+<p>
+Certaines clés sont telles quelles des adresse bitcoin, litecoin, etc&#x2026;
+</p>
+
+<p>
+En partageant une graine cryptographique avec un ami,
+il est possible de dériver l'arbre chacun de son coté
+et de s'en servir comme clés de chiffrement ou comme points
+de rendez vous sans autres négociations.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org56ac0f7" class="outline-2">
+<h2 id="org56ac0f7"><span class="section-number-2">2</span> Interfaces</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Nous ne voulons pas limiter le logiciel à une seule interface.
+</p>
+
+<p>
+Cependant pour simplifier le developpement
+il est pratique de proposer une interface standart.
+</p>
+
+<p>
+Pour répondre au besoin de chacun,
+chaque utilisateur devrai avoir la possibilité de
+personnaliser son interface. Autant comment il apparait aux autres
+que comment les autres lui apparaissent.
+</p>
+
+<p>
+Les conversations, groupes et événements devraient être
+modifiable à deux échelles, globalement et localement (pour chacun).
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgf0bdf33" class="outline-2">
+<h2 id="orgf0bdf33"><span class="section-number-2">3</span> Vrac</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org225cadf" class="outline-3">
+<h3 id="org225cadf"><span class="section-number-3">3.1</span> Ne pas s'intéresser au transfert ni au stockage des données</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Il est utile étude de ne s'interesser ni aux mechanismes
+de distribution des messages, ni au stockage des messages.
+</p>
+
+<p>
+Nous nous limitons donc à regarger l'échange
+pair-à-pair (peer-to-peer) et de bout-en-bout (end-to-end)
+comme si il était toujours possible.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org08316dc" class="outline-3">
+<h3 id="org08316dc"><span class="section-number-3">3.2</span> Données immutables</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+Oublier le cas où on peut effacer ou modifier.
+</p>
+
+<p>
+Nous pourrons ainsi créer plus facilement des hiérarchies de structure.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org571d777" class="outline-3">
+<h3 id="org571d777"><span class="section-number-3">3.3</span> Optimistic CRDT</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+using resource id and modification time
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgbf03957" class="outline-3">
+<h3 id="orgbf03957"><span class="section-number-3">3.4</span> Gaussian filter to query the server</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+Do not ask the server full addresses
+use a filter or just the start of the string
+and ask fake addresses on top of it
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgcaba7a0" class="outline-3">
+<h3 id="orgcaba7a0"><span class="section-number-3">3.5</span> Programmed message</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+Message we only want to send at a fixed time
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgea8cd15" class="outline-3">
+<h3 id="orgea8cd15"><span class="section-number-3">3.6</span> Systemes</h3>
+<div class="outline-text-3" id="text-3-6">
+</div>
+<div id="outline-container-org06c6a2b" class="outline-4">
+<h4 id="org06c6a2b"><span class="section-number-4">3.6.1</span> Systeme 0</h4>
+<div class="outline-text-4" id="text-3-6-1">
+<p>
+Tous les messages n'inscrive séquentiellement dans une bande de stockage infini
+{m0..|m1&#x2026;&#x2026;.|m2|m3..|m4&#x2026;&#x2026;|m5..|&#x2026;..}
+Un message ne contient aucune métadata
+Tout le monde recoit les messages de tout le monde
+Personne ne sait qui parle à qui
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org7aab48b" class="outline-4">
+<h4 id="org7aab48b"><span class="section-number-4">3.6.2</span> Systeme 1</h4>
+<div class="outline-text-4" id="text-3-6-2">
+<p>
+message n:
+{ destination: user n | content: data }
+ou
+{ source: user n | content: data }
+ou (plus souvent)
+{ source: user n | destination: user m | content: data }
+Un user peut être représenté par n'importe quoi.
+Rien n'est dit sur la possibilité ou non d'impersonnifer quelqu'un (usurpation d'identité). A priori c'est possible.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org85acfd6" class="outline-4">
+<h4 id="org85acfd6"><span class="section-number-4">3.6.3</span> Systeme 2</h4>
+<div class="outline-text-4" id="text-3-6-3">
+<p>
+message n:
+{ (source) | (destination) | previous: message m | content }
+ou
+{ (source) | (destination) | thread<sub>id</sub>: data | content }
+Pour simplifier on pourrait garder que le deuxième cas en utilisant si besoin le hash du message précédent comme thread<sub>id</sub>
+Les parenthèses signinfie que c'est optionel (soit présent soit absent), soit par système, soit par message dans un système plus global
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2020-03-30 Mon 11:41</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

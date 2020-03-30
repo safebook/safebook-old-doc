@@ -1,0 +1,150 @@
+#+TITLE: Propositions
+#+HTML_HEAD: <link href="solarized-dark.min.css" rel="stylesheet"></link>
+
+** Cryptographie
+   
+*** Trustless
+    
+    Nous ne devrions pas avoir besoin de faire confiance au serveur
+    pour ne pas lire et analyser nos message.
+    
+    Il devrait donc être impossible à un tiers de lire, ou modifier
+    notre flux de communication. Pour cela nous utiliseront la cryptographie.
+
+    Les données chiffrés devraient pouvoir être ouvertes à tous
+    sans que cela puisse nous compromettre.
+
+
+*** Types de messages
+   
+   Chaque utilisateur ayant des besoins spécifiques
+
+   Nous aurons différent types de messages, par exemple :
+
+   - En clair: contenu public
+   - Zero: pas de métadata (exemples: bitmessage, minilock)
+   - Direct: Message to public key (M2PK)
+   - Satoshi: Message to public key hash (M2PKH)
+
+
+*** Types d'adresses
+
+   Chaque utilisateur ayant des besoins spécifiques
+
+   Nous aurons donc différent types d'adresses, ainsi que
+   différent types d'encodage.
+   
+   Types d'adresses :
+
+   - Clé publique
+   - Empreinte de clé publique (ex: SFGAftzSTztFSB8LMwsrdCKTyqGY6zr3sU).
+     Est plus court qu'une clé publique, et ne la divulgue pas.
+   - Pseudo grace avec un système de 'DNS'
+
+   Types d'encodages :
+   
+   - Binary
+   - Base58
+   - Suite de mots (ex: give input convince decide dizzy tag flash spawn)
+   - QR Code
+
+   
+*** Comptes (arbres)
+    
+    Nous utiliserons une graine cryptographie comme un arbre infini
+    générant un flux infini et infiniment dichotomisable d'adresses et de clés.
+    
+    Certaines clés serviront à destocker (en dechiffrant) certaines
+    informations chiffrés.
+
+    Certaines clés sont telles quelles des adresse bitcoin, litecoin, etc...
+    
+    En partageant une graine cryptographique avec un ami,
+    il est possible de dériver l'arbre chacun de son coté
+    et de s'en servir comme clés de chiffrement ou comme points
+    de rendez vous sans autres négociations.
+
+
+** Interfaces
+   
+   Nous ne voulons pas limiter le logiciel à une seule interface.
+   
+   Cependant pour simplifier le developpement
+   il est pratique de proposer une interface standart.
+
+   Pour répondre au besoin de chacun,
+   chaque utilisateur devrai avoir la possibilité de
+   personnaliser son interface. Autant comment il apparait aux autres
+   que comment les autres lui apparaissent.
+
+   Les conversations, groupes et événements devraient être
+   modifiable à deux échelles, globalement et localement (pour chacun).
+
+
+** Vrac
+
+*** Ne pas s'intéresser au transfert ni au stockage des données
+
+    Il est utile étude de ne s'interesser ni aux mechanismes
+    de distribution des messages, ni au stockage des messages.
+
+    Nous nous limitons donc à regarger l'échange
+    pair-à-pair (peer-to-peer) et de bout-en-bout (end-to-end)
+    comme si il était toujours possible.
+
+
+*** Données immutables
+
+    Oublier le cas où on peut effacer ou modifier.
+
+    Nous pourrons ainsi créer plus facilement des hiérarchies de structure.
+
+
+*** Optimistic CRDT
+
+    using resource id and modification time
+
+
+*** Gaussian filter to query the server
+
+    Do not ask the server full addresses
+    use a filter or just the start of the string
+    and ask fake addresses on top of it
+
+
+*** Programmed message
+
+    Message we only want to send at a fixed time
+
+
+*** Systemes
+
+**** Systeme 0
+
+    Tous les messages n'inscrive séquentiellement dans une bande de stockage infini
+    {m0..|m1.......|m2|m3..|m4......|m5..|.....}
+    Un message ne contient aucune métadata
+    Tout le monde recoit les messages de tout le monde
+    Personne ne sait qui parle à qui
+
+
+**** Systeme 1
+
+    message n:
+    { destination: user n | content: data }
+    ou
+    { source: user n | content: data }
+    ou (plus souvent)
+    { source: user n | destination: user m | content: data }
+    Un user peut être représenté par n'importe quoi.
+    Rien n'est dit sur la possibilité ou non d'impersonnifer quelqu'un (usurpation d'identité). A priori c'est possible.
+
+
+**** Systeme 2
+
+    message n:
+    { (source) | (destination) | previous: message m | content }
+    ou
+    { (source) | (destination) | thread_id: data | content }
+    Pour simplifier on pourrait garder que le deuxième cas en utilisant si besoin le hash du message précédent comme thread_id
+    Les parenthèses signinfie que c'est optionel (soit présent soit absent), soit par système, soit par message dans un système plus global

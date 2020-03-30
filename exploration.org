@@ -1,0 +1,48 @@
+#+TITLE: Tour d'horizon
+#+HTML_HEAD: <link href="solarized-dark.min.css" rel="stylesheet"></link>
+
+* Métadonnées
+
+** Message aveugle
+
+   Aucune métadonnée.
+
+   Le message n'indique pas qui l'a envoyé ni à qui il est envoyé.
+   Il faut essayer toutes les clés pour déchiffrer le message.
+
+   Exemples: [[https://github.com/kaepora/miniLock][miniLock]], [[https://bitmessage.org][Bitmessage]]
+
+   
+** Message dirigé
+
+   Métadonnées basiques
+
+   On a quelques information sur qui envoi le message, ou à qui il est envoyé.
+
+   Exemples: [[https://gnupg.org/][GnuPG]], [[https://signal.org][Signal]]
+
+
+* Centralisé, Décentralisé, Distribué
+
+** Centralisé
+
+   [[https://signal.org/][signal]]
+
+
+** Décentralisé
+   
+   [[https://fediverse.party/][ActivityPub]] (Mastodon, PixelFed, Pléroma, PeerTube, ...)
+
+
+** Distribué
+
+   [[https://ipfs.io/][ipfs]]
+   [[https://bitcoin.it][bitcoin]]
+   [[https://ethereum.org][ethereum]]
+   [[https://geti2p.net][i2p]]
+   [[https://freenetproject.org/][freenet]]
+
+
+** Autres
+
+   [[https://www.torproject.org/][TOR]]

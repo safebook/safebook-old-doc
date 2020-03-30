@@ -1,0 +1,75 @@
+* Histoire de la cryptographie
+
+L'art du secret
+
+** Prehistory
+
+*** Langues et alphabets
+
+    Une première mesure pour garder une information secrete est d'utiliser un support
+    (langue orale ou alphabet écrit) qui n'est pas connu de ceux dont ont veut garder
+    le message secret
+
+*** Écriture en miroir (écriture spéculaire)
+
+    Le message est écrit dans l'ordre inverse du sens de lecture normal.
+
+    Les lettre sont également inversés. On peut s'aider d'un miroir pour déchiffrer le texte.
+
+*** Chiffre de César
+
+*** Chiffre de Vigenère
+
+
+** History
+
+*** Enigma
+
+*** PGP (1991)
+    
+
+** Les réseau sociaux
+
+  Signal, Télégram, Matrix, Berty
+  ((Basés plutot sur la cryptographie))
+  BitTorrent, Scuttlebutt, IPFS, Bitcoin, Ethereum, Ring, BitMessage
+  Diaspora, ActivityPub (Mastodont, *faire la liste, ou social.party*)
+  ((Basés sur la décentralisation et les réseaux distribués)
+
+
+  
+* Algorithmes
+
+** Masque jetable
+
+** Chiffrement symétrique 
+
+- Clef de chiffrement et clef (identique) de dechiffrement
+  C'est la cryptographie symmetrique
+- Clef de chiffrement et clef (différente) de dechiffrement
+  C'est la cryptographie asymetrique de chiffrement
+- Clef de signature et clef (différente) de verification
+  C'est la cryptographie asymmetrique de signature
+
+* Cryptanalyse
+
+** Force brute
+
+   Tester toutes les combinaisons possibles.
+
+
+** Analyse fréquentielle
+
+   Dans une langue donnée, certaines lettres et combinaise de lettres apparaissent
+   plus ou moins souvent. C'est ce qui permet l'analyse fréquentielle.
+
+   Elle est très efficace sur le chiffrement par substitution
+   comme le *chiffre de César* ou le *chiffre de Vigenère*.
+
+   Plus le texte est long, plus elle est facile.
+
+
+** Cryptanalyse linéaire
+
+
+** Cryptanalyse différentielle
