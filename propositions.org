@@ -1,4 +1,4 @@
-#+TITLE: Propositions
+#+TITLE: Idées
 #+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
 #+OPTIONS: toc:nil num:nil
 

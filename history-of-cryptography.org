@@ -1,8 +1,10 @@
-* Histoire de la cryptographie
+#+TITLE: Histoire de la cryptographie
+#+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
+#+OPTIONS: toc:nil num:nil
 
-L'art du secret
+* L'art du secret
 
-** Prehistory
+** Prehistoire
 
 *** Langues et alphabets
 
@@ -42,6 +44,7 @@ L'art du secret
 
 ** Masque jetable
 
+
 ** Chiffrement symétrique 
 
 - Clef de chiffrement et clef (identique) de dechiffrement
@@ -50,6 +53,7 @@ L'art du secret
   C'est la cryptographie asymetrique de chiffrement
 - Clef de signature et clef (différente) de verification
   C'est la cryptographie asymmetrique de signature
+
 
 * Cryptanalyse
 

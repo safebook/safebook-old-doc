@@ -2,6 +2,7 @@
 #+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
 #+OPTIONS: toc:nil num:nil
 
-* [[file:introduction.html][Un réseau social mathématique]]
-* [[file:exploration.html][Tour d'horizon de l'écosystème]]
-* [[file:propositions.html][Propositions]]
+* [[introduction.html][Un réseau social mathématique]]
+* [[history.html][Histoire de la cryptographie]]
+* [[exploration.html][Tour d'horizon de l'écosystème]]
+* [[propositions.html][Idées]]

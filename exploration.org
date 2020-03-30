@@ -1,5 +1,5 @@
 #+TITLE: Tour d'horizon
-#+HTML_HEAD: <link href="solarized-dark.min.css" rel="stylesheet"></link>
+#+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
 #+OPTIONS: toc:nil num:nil
 
 * Métadonnées
