@@ -1,7 +1,7 @@
-#+TITLE: Index
+#+TITLE: Un autre réseau social
 #+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
-#+OPTIONS: toc:nil
+#+OPTIONS: toc:nil num:nil
 
-* [[file:introduction.html][Introduction]]
-* [[file:exploration.html][Exploration]]
+* [[file:introduction.html][Un réseau social mathématique]]
+* [[file:exploration.html][Tour d'horizon de l'écosystème]]
 * [[file:propositions.html][Propositions]]

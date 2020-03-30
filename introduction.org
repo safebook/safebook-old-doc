@@ -1,5 +1,6 @@
-#+TITLE: Réseau social cryptographique
+#+TITLE: Un réseau social mathématique
 #+HTML_HEAD: <link href="solarized-dark.min.css" rel="stylesheet"></link>
+#+OPTIONS: num:nil
 
 * Introduction
 

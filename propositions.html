@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2020-03-30 Mon 11:41 -->
+<!-- 2020-03-30 Mon 22:00 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Propositions</title>
@@ -179,7 +179,7 @@
   .org-svg { width: 90%; }
   /*]]>*/-->
 </style>
-<link href="solarized-dark.min.css" rel="stylesheet"></link>
+<link href="solarized-light.min.css" rel="stylesheet"></link>
 <script type="text/javascript">
 /*
 @licstart  The following is the entire license notice for the
@@ -230,46 +230,14 @@ for the JavaScript code in this tag.
 <body>
 <div id="content">
 <h1 class="title">Propositions</h1>
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#orge8ef3f4">1. Cryptographie</a>
-<ul>
-<li><a href="#org32dba60">1.1. Trustless</a></li>
-<li><a href="#org6eed077">1.2. Types de messages</a></li>
-<li><a href="#org645100c">1.3. Types d'adresses</a></li>
-<li><a href="#orge041c7a">1.4. Comptes (arbres)</a></li>
-</ul>
-</li>
-<li><a href="#org56ac0f7">2. Interfaces</a></li>
-<li><a href="#orgf0bdf33">3. Vrac</a>
-<ul>
-<li><a href="#org225cadf">3.1. Ne pas s'intéresser au transfert ni au stockage des données</a></li>
-<li><a href="#org08316dc">3.2. Données immutables</a></li>
-<li><a href="#org571d777">3.3. Optimistic CRDT</a></li>
-<li><a href="#orgbf03957">3.4. Gaussian filter to query the server</a></li>
-<li><a href="#orgcaba7a0">3.5. Programmed message</a></li>
-<li><a href="#orgea8cd15">3.6. Systemes</a>
-<ul>
-<li><a href="#org06c6a2b">3.6.1. Systeme 0</a></li>
-<li><a href="#org7aab48b">3.6.2. Systeme 1</a></li>
-<li><a href="#org85acfd6">3.6.3. Systeme 2</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
 
-<div id="outline-container-orge8ef3f4" class="outline-2">
-<h2 id="orge8ef3f4"><span class="section-number-2">1</span> Cryptographie</h2>
-<div class="outline-text-2" id="text-1">
+<div id="outline-container-orgecfa96d" class="outline-2">
+<h2 id="orgecfa96d">Cryptographie</h2>
+<div class="outline-text-2" id="text-orgecfa96d">
 </div>
-<div id="outline-container-org32dba60" class="outline-3">
-<h3 id="org32dba60"><span class="section-number-3">1.1</span> Trustless</h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-org521b71f" class="outline-3">
+<h3 id="org521b71f">Trustless</h3>
+<div class="outline-text-3" id="text-org521b71f">
 <p>
 Nous ne devrions pas avoir besoin de faire confiance au serveur
 pour ne pas lire et analyser nos message.
@@ -288,9 +256,9 @@ sans que cela puisse nous compromettre.
 </div>
 
 
-<div id="outline-container-org6eed077" class="outline-3">
-<h3 id="org6eed077"><span class="section-number-3">1.2</span> Types de messages</h3>
-<div class="outline-text-3" id="text-1-2">
+<div id="outline-container-orgb3a293a" class="outline-3">
+<h3 id="orgb3a293a">Types de messages</h3>
+<div class="outline-text-3" id="text-orgb3a293a">
 <p>
 Chaque utilisateur ayant des besoins spécifiques
 </p>
@@ -309,9 +277,9 @@ Nous aurons différent types de messages, par exemple :
 </div>
 
 
-<div id="outline-container-org645100c" class="outline-3">
-<h3 id="org645100c"><span class="section-number-3">1.3</span> Types d'adresses</h3>
-<div class="outline-text-3" id="text-1-3">
+<div id="outline-container-orgec1c296" class="outline-3">
+<h3 id="orgec1c296">Types d'adresses</h3>
+<div class="outline-text-3" id="text-orgec1c296">
 <p>
 Chaque utilisateur ayant des besoins spécifiques
 </p>
@@ -346,9 +314,9 @@ Types d'encodages :
 </div>
 
 
-<div id="outline-container-orge041c7a" class="outline-3">
-<h3 id="orge041c7a"><span class="section-number-3">1.4</span> Comptes (arbres)</h3>
-<div class="outline-text-3" id="text-1-4">
+<div id="outline-container-orgbe179ac" class="outline-3">
+<h3 id="orgbe179ac">Comptes (arbres)</h3>
+<div class="outline-text-3" id="text-orgbe179ac">
 <p>
 Nous utiliserons une graine cryptographie comme un arbre infini
 générant un flux infini et infiniment dichotomisable d'adresses et de clés.
@@ -374,9 +342,9 @@ de rendez vous sans autres négociations.
 </div>
 
 
-<div id="outline-container-org56ac0f7" class="outline-2">
-<h2 id="org56ac0f7"><span class="section-number-2">2</span> Interfaces</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-orgbbec209" class="outline-2">
+<h2 id="orgbbec209">Interfaces</h2>
+<div class="outline-text-2" id="text-orgbbec209">
 <p>
 Nous ne voulons pas limiter le logiciel à une seule interface.
 </p>
@@ -401,13 +369,13 @@ modifiable à deux échelles, globalement et localement (pour chacun).
 </div>
 
 
-<div id="outline-container-orgf0bdf33" class="outline-2">
-<h2 id="orgf0bdf33"><span class="section-number-2">3</span> Vrac</h2>
-<div class="outline-text-2" id="text-3">
+<div id="outline-container-org1721e7e" class="outline-2">
+<h2 id="org1721e7e">Vrac</h2>
+<div class="outline-text-2" id="text-org1721e7e">
 </div>
-<div id="outline-container-org225cadf" class="outline-3">
-<h3 id="org225cadf"><span class="section-number-3">3.1</span> Ne pas s'intéresser au transfert ni au stockage des données</h3>
-<div class="outline-text-3" id="text-3-1">
+<div id="outline-container-org4a05dfd" class="outline-3">
+<h3 id="org4a05dfd">Ne pas s'intéresser au transfert ni au stockage des données</h3>
+<div class="outline-text-3" id="text-org4a05dfd">
 <p>
 Il est utile étude de ne s'interesser ni aux mechanismes
 de distribution des messages, ni au stockage des messages.
@@ -422,9 +390,9 @@ comme si il était toujours possible.
 </div>
 
 
-<div id="outline-container-org08316dc" class="outline-3">
-<h3 id="org08316dc"><span class="section-number-3">3.2</span> Données immutables</h3>
-<div class="outline-text-3" id="text-3-2">
+<div id="outline-container-org74309f0" class="outline-3">
+<h3 id="org74309f0">Données immutables</h3>
+<div class="outline-text-3" id="text-org74309f0">
 <p>
 Oublier le cas où on peut effacer ou modifier.
 </p>
@@ -436,9 +404,9 @@ Nous pourrons ainsi créer plus facilement des hiérarchies de structure.
 </div>
 
 
-<div id="outline-container-org571d777" class="outline-3">
-<h3 id="org571d777"><span class="section-number-3">3.3</span> Optimistic CRDT</h3>
-<div class="outline-text-3" id="text-3-3">
+<div id="outline-container-orge983612" class="outline-3">
+<h3 id="orge983612">Optimistic CRDT</h3>
+<div class="outline-text-3" id="text-orge983612">
 <p>
 using resource id and modification time
 </p>
@@ -446,9 +414,9 @@ using resource id and modification time
 </div>
 
 
-<div id="outline-container-orgbf03957" class="outline-3">
-<h3 id="orgbf03957"><span class="section-number-3">3.4</span> Gaussian filter to query the server</h3>
-<div class="outline-text-3" id="text-3-4">
+<div id="outline-container-org3b512cd" class="outline-3">
+<h3 id="org3b512cd">Gaussian filter to query the server</h3>
+<div class="outline-text-3" id="text-org3b512cd">
 <p>
 Do not ask the server full addresses
 use a filter or just the start of the string
@@ -458,9 +426,9 @@ and ask fake addresses on top of it
 </div>
 
 
-<div id="outline-container-orgcaba7a0" class="outline-3">
-<h3 id="orgcaba7a0"><span class="section-number-3">3.5</span> Programmed message</h3>
-<div class="outline-text-3" id="text-3-5">
+<div id="outline-container-org0921f0c" class="outline-3">
+<h3 id="org0921f0c">Programmed message</h3>
+<div class="outline-text-3" id="text-org0921f0c">
 <p>
 Message we only want to send at a fixed time
 </p>
@@ -468,13 +436,13 @@ Message we only want to send at a fixed time
 </div>
 
 
-<div id="outline-container-orgea8cd15" class="outline-3">
-<h3 id="orgea8cd15"><span class="section-number-3">3.6</span> Systemes</h3>
-<div class="outline-text-3" id="text-3-6">
+<div id="outline-container-org1378afd" class="outline-3">
+<h3 id="org1378afd">Systemes</h3>
+<div class="outline-text-3" id="text-org1378afd">
 </div>
-<div id="outline-container-org06c6a2b" class="outline-4">
-<h4 id="org06c6a2b"><span class="section-number-4">3.6.1</span> Systeme 0</h4>
-<div class="outline-text-4" id="text-3-6-1">
+<div id="outline-container-org236f7dd" class="outline-4">
+<h4 id="org236f7dd">Systeme 0</h4>
+<div class="outline-text-4" id="text-org236f7dd">
 <p>
 Tous les messages n'inscrive séquentiellement dans une bande de stockage infini
 {m0..|m1&#x2026;&#x2026;.|m2|m3..|m4&#x2026;&#x2026;|m5..|&#x2026;..}
@@ -486,9 +454,9 @@ Personne ne sait qui parle à qui
 </div>
 
 
-<div id="outline-container-org7aab48b" class="outline-4">
-<h4 id="org7aab48b"><span class="section-number-4">3.6.2</span> Systeme 1</h4>
-<div class="outline-text-4" id="text-3-6-2">
+<div id="outline-container-org9b1fa1d" class="outline-4">
+<h4 id="org9b1fa1d">Systeme 1</h4>
+<div class="outline-text-4" id="text-org9b1fa1d">
 <p>
 message n:
 { destination: user n | content: data }
@@ -503,9 +471,9 @@ Rien n'est dit sur la possibilité ou non d'impersonnifer quelqu'un (usurpation 
 </div>
 
 
-<div id="outline-container-org85acfd6" class="outline-4">
-<h4 id="org85acfd6"><span class="section-number-4">3.6.3</span> Systeme 2</h4>
-<div class="outline-text-4" id="text-3-6-3">
+<div id="outline-container-org0d8d16b" class="outline-4">
+<h4 id="org0d8d16b">Systeme 2</h4>
+<div class="outline-text-4" id="text-org0d8d16b">
 <p>
 message n:
 { (source) | (destination) | previous: message m | content }
@@ -520,7 +488,7 @@ Les parenthèses signinfie que c'est optionel (soit présent soit absent), soit 
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="date">Created: 2020-03-30 Mon 11:41</p>
+<p class="date">Created: 2020-03-30 Mon 22:00</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
