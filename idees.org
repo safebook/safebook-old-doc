@@ -2,16 +2,9 @@
 #+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
 #+OPTIONS: toc:nil num:nil
 
-** Technologies générales
-
-   - Cryptographie (hashs, chiffrement symétrique et asymétrique, signatures)
-   - Pair-à-pair
-   - CRDTs
-   - Graphes
-   - IPFS
-   - Données sémantiques
-
-** Technologies cryptographiques
+* Cryptographie
+  
+** Techniques
 
 *** Chiffrement
 
@@ -40,12 +33,6 @@
     Aucun autre message calculable n'a la même empreinte cryptographique.
     
     Il n'est pas possible de retrouver le message seulement à partir de son empreinte.
-
-
-*** Arbre cryptographique
-
-    Un *arbre cryptographique* utilise une *graine cryptographique* pour générer
-    un ensemble de branches et feuilles qui peuvent toutes être utilisés comme *clés cryptographiques*
 
 
 *** Clés de chiffrement et de déchiffrement
@@ -77,20 +64,15 @@
     La *clé de vérification* peut être partagée afin de rendre possible la vérifaction des messages signés.
 
 
-** Types de messages
+*** Arbre cryptographique
 
-   - Un message *en clair* est publiquement lisible.
+    Un *arbre cryptographique* utilise une *graine cryptographique* pour générer
+    un ensemble de branches et feuilles qui peuvent toutes être utilisés comme *clés cryptographiques*
+    
+    [[https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki][Hierarchical Deterministic Wallets]] (BIP-32)
 
-   - Un message avec *zero information* est complétement illisible avant d'être dechiffré.
-     Aucune information n'est disponible pour savoir quelle clé peut le déchiffrer.
 
-   - Un message avec *adresse publique* identifie *la clé de déchiffrement asymétrique* permettant de le déchiffrer.
-
-   - Un message avec *empreinte d'adresse publique* identifie l'*empreinte* de la *clé de déchiffrement asymétrique* permettant de le déchiffrer.
-
-   - Un message avec *signature cryptographique* est authentifiable par la *clé de vérification*
-
-** Cryptographie
+** Concepts
    
 *** Trustless
     
@@ -111,9 +93,26 @@
    Nous aurons différent types de messages, par exemple :
 
    - En clair: contenu public
+
    - Zero: pas de métadata (exemples: bitmessage, minilock)
+
    - Direct: Message to public key (M2PK)
+
    - Satoshi: Message to public key hash (M2PKH)
+
+
+*** Types de messages (2)
+
+   - Un message *en clair* est publiquement lisible.
+
+   - Un message avec *zero information* est complétement illisible avant d'être dechiffré.
+     Aucune information n'est disponible pour savoir quelle clé peut le déchiffrer.
+
+   - Un message avec *adresse publique* identifie *la clé de déchiffrement asymétrique* permettant de le déchiffrer.
+
+   - Un message avec *empreinte d'adresse publique* identifie l'*empreinte* de la *clé de déchiffrement asymétrique* permettant de le déchiffrer.
+
+   - Un message avec *signature cryptographique* est authentifiable par la *clé de vérification*
 
 
 *** Types d'adresses
@@ -173,8 +172,7 @@
     pour ne pas embarasser l'utilisateur d'avoir à se souvenir d'un mot de passe
     different pour chaque platforme qu'il utilise.
 
-
-** Interfaces
+* Interfaces
    
    Nous ne voulons pas limiter le logiciel à une seule interface.
    
@@ -190,7 +188,7 @@
    modifiable à deux échelles, globalement et localement (pour chacun).
 
 
-** Vrac
+* Vrac
 
 *** Introduction
 
@@ -270,3 +268,13 @@ Son potentiel : Aider à recoder l'information pour décoder le réél.
     { (source) | (destination) | thread_id: data | content }
     Pour simplifier on pourrait garder que le deuxième cas en utilisant si besoin le hash du message précédent comme thread_id
     Les parenthèses signinfie que c'est optionel (soit présent soit absent), soit par système, soit par message dans un système plus global
+
+
+*** Technologies Utiles
+
+   - Cryptographie (hashs, chiffrement symétrique et asymétrique, signatures)
+   - Pair-à-pair
+   - CRDTs
+   - Graphes
+   - IPFS
+   - Données sémantiques
