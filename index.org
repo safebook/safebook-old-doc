@@ -5,34 +5,96 @@
 ** Enjeux
 
   - Dépoluer internet
+
   - Permettre au vivre-ensemble de s'épanouir
 
+  - Permettre de se rencontrer
     
+
 ** Objectifs
 
   - Faire un réseau vraiment collaboratif, où les données appartiennent vraiment aux utilisateurs.
-  - Un minimum de code mais des fonctionnalités puissantes. Être le plus autonome et complet possible.
+
   - Avoir des règles claires et infaillibles pour définir les droits d'accès et de modification.
 
 
-** Structure  
-  
-  - Utilisateurs
-  - Communautés
-  - Messages
-  - Événements
+** Graphe social
 
-** Technologies
+*** Noeud
 
-   - Cryptographie (hashs, chiffrement symétrique et asymétrique, signatures)
-   - Pair-à-pair
-   - CRDTs
-   - Graphes
-   - Données sémantiques
+   Le réseau ne s'articule pas autour du concept d'utilisateur, mais de groupe.
+
+   Une conversation à deux ou plus, une communauté ou un événement sont tous des groupe.
+
+   L'utilisateur peut lui-même être vu comme un groupe individuel.
+
+   
+*** Graphe
+    
+    Les groupes sont en relation via les arêtes du graphe.
+    
+    Un groupe peut contenir, être contenu, ou être en relation avec d'autres groupes.
+
+    
+** Sémantique
+
+   Les objets appartiennent à une ontologie hiérarchique.
+
+
+** Un réseau mathématique
+   
+   Traditionellement, le serveur a comme role de maintenir la loi dans le réseau.
+   
+   Dans un réseau pair-à-pair, c'est au clients de verifier les règles.
+
+   C'est ici que la cryptographie rentre en jeu.
+
+   Exemple de réseau cryptographique et mathématiques (donc sans serveur, data is law) :
+   Bitcoin, SSB, IPFS
+
+
+** Décentralisation
+   
+   Réseau décentralisé ou distribué.
+
+   Les données appartiennent aux utilisateur et sont à proxmité d'eux.
+   
+   Les données sont naturellement stockées par l'utilisateur et par les noeuds les plus proches.
+   
+   Les moyens de redondances de prédilection suivent le graphe social (gossip)
+   ou sont stocké par un ou plusieurs serveurs (décentralisation).
+   
+*** Graphe décentralisé
+
+    Les éléments ne sont pas des noeuds, mais des collection de noeuds ayant tous la même référence.
+
+    Utilisation des CRDTs pour merger la structure en un ensemble cohérent.
+
+
+** Éléments
+   
+*** Utilisateur
+
+    C'est l'avatar d'un utilisateur sur la platforme.
+
+    C'est un noeud d'authorité du graphe.
+
+
+*** Message
+    
+    C'est le ciment du réseau social et sa fonction.
+
+    (Un message est aussi un noeud du graphe, il peut être la destination pour d'autres messages.)
+
+
+*** Evenement et communautés
+
+    Ce sont des singularités du réseau.
+
+    Ils contiennent et se contenu par d'autres noeuds, des utilsateurs, messages, événements, communautés, ...
 
 
 * Autres textes
-** [[file:introduction.html][Un réseau social mathématique]]
-** [[file:history.html][Histoire de la cryptographie]]
-** [[file:exploration.html][Tour d'horizon de l'écosystème]]
-** [[file:propositions.html][Idées]]
+** [[file:histoire-de-la-crypto.org][Histoire de la cryptographie]]
+** [[file:histoire-des-reseaux-sociaux.org][Histoire des réseaux sociaux]]
+** [[file:idees.org][Idées]]

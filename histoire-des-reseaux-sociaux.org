@@ -2,9 +2,20 @@
 #+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
 #+OPTIONS: toc:nil num:nil
 
-* Métadonnées
+* Le web
+  Internet
+  
 
-** Message aveugle
+* Les platformes
+  Myspace
+  Facebook
+
+
+* Détail
+
+** Métadonnées
+
+*** Message aveugle
 
    Aucune métadonnée.
 
@@ -14,7 +25,7 @@
    Exemples: [[https://github.com/kaepora/miniLock][miniLock]], [[https://bitmessage.org][Bitmessage]]
 
    
-** Message dirigé
+*** Message dirigé
 
    Métadonnées basiques
 
@@ -23,27 +34,30 @@
    Exemples: [[https://gnupg.org/][GnuPG]], [[https://signal.org][Signal]]
 
 
-* Centralisé, Décentralisé, Distribué
+** Centralisé, Décentralisé, Distribué
 
-** Centralisé
+*** Centralisé
 
-   [[https://signal.org/][signal]]
+    [[https://signal.org/][signal]]
 
 
-** Décentralisé
+*** Décentralisé
    
-   [[https://fediverse.party/][ActivityPub]] (Mastodon, PixelFed, Pléroma, PeerTube, ...)
+    Diaspora
+    [[https://fediverse.party/][ActivityPub]] (Mastodon, PixelFed, Pléroma, PeerTube, ...)
 
 
-** Distribué
+*** Distribué
 
-   [[https://ipfs.io/][ipfs]]
-   [[https://bitcoin.it][bitcoin]]
-   [[https://ethereum.org][ethereum]]
-   [[https://geti2p.net][i2p]]
-   [[https://freenetproject.org/][freenet]]
+    [[https://ipfs.io/][ipfs]]
+    [[https://bitcoin.it][bitcoin]]
+    [[https://ethereum.org][ethereum]]
+    [[https://geti2p.net][i2p]]
+    [[https://freenetproject.org/][freenet]]
+    matrix
+    scuttlebutt
 
 
-** Autres
+*** Spécial
 
    [[https://www.torproject.org/][TOR]]

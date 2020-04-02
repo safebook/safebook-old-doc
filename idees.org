@@ -2,6 +2,94 @@
 #+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
 #+OPTIONS: toc:nil num:nil
 
+** Technologies générales
+
+   - Cryptographie (hashs, chiffrement symétrique et asymétrique, signatures)
+   - Pair-à-pair
+   - CRDTs
+   - Graphes
+   - IPFS
+   - Données sémantiques
+
+** Technologies cryptographiques
+
+*** Chiffrement
+
+    Un message peut ou non être chiffré par l'utilisateur.
+    
+    Permet de se passer d'un tiers pour controller l'accès à l'information.
+
+    Un chiffrement cryptographique garanti que seul les possesseurs de la clé de déchiffrement pouront le lire.
+
+
+*** Authentification
+
+    Un message peut ou non être signé par l'utilisateur.
+
+    Permet de se passer d'un tiers pour garantir l'authentification des données.
+
+    Une signature cryptographique prouve que ce message a bien été envoyé par l'utilisateur.
+    
+    
+*** Fonction de hachage cryptographie
+
+    Une fonction de hachage cryptographie donne l'*empreinte cryptographique* d'un message.
+    
+    L'empreinte cryptographique est suffisament longue et cryptique pour avoir ces deux propriétés :
+
+    Aucun autre message calculable n'a la même empreinte cryptographique.
+    
+    Il n'est pas possible de retrouver le message seulement à partir de son empreinte.
+
+
+*** Arbre cryptographique
+
+    Un *arbre cryptographique* utilise une *graine cryptographique* pour générer
+    un ensemble de branches et feuilles qui peuvent toutes être utilisés comme *clés cryptographiques*
+
+
+*** Clés de chiffrement et de déchiffrement
+    
+    Une *clé cryptographique* est un moyen de chiffrer (crypter) ou de déchiffrer des données.
+    
+    Une clé de chiffrement *symétrique* permet de chiffrer et dechiffrer des données.
+
+    Ses possesseurs forment donc le groupe ayant le pouvoir de lire les messages chiffrés.
+    
+
+*** Clés de chiffrement uniquement
+
+    Une *clé de déchiffrement asymétrique* permet de génerer la *clé de chiffrement asymétrique* correspondante.
+
+    Une *clé de chiffrement asymétrique* permet de chiffrer des messages mais pas de les déchiffrer.
+
+    Ses possesseurs peuvent donc uniquement chiffrer des messages, sans pouvoir les relire.
+
+    Seul le (ou les) possesseur(s) de la *clé de déchiffrement* correspondante a(ont) le pouvoir de les lire.
+
+    
+*** Clés d'authentification et de vérification
+
+    Une *clé de signature cryptographique* de permet d'authentifier un message.
+    
+    Elle permet aussi de générer la *clé de verification cryptographique* correspondante.
+    
+    La *clé de vérification* peut être partagée afin de rendre possible la vérifaction des messages signés.
+
+
+** Types de messages
+
+   - Un message *en clair* est publiquement lisible.
+
+   - Un message avec *zero information* est complétement illisible avant d'être dechiffré.
+     Aucune information n'est disponible pour savoir quelle clé peut le déchiffrer.
+
+   - Un message avec *adresse publique* identifie *la clé de déchiffrement asymétrique* permettant de le déchiffrer.
+
+   - Un message avec *empreinte d'adresse publique* identifie l'*empreinte* de la *clé de déchiffrement asymétrique* permettant de le déchiffrer.
+
+   - Un message avec *signature cryptographique* est authentifiable par la *clé de vérification*
+
 ** Cryptographie
    
 *** Trustless
@@ -66,6 +154,26 @@
     de rendez vous sans autres négociations.
 
 
+
+*** Pseudo/Email/Identifiant
+
+    C'est un outil permettant à la platforme de reconnaitre ses utilisateurs.
+    
+    Nous n'avons pas besoin que l'utilisateur en choisisse un car il est déjà
+    uniquement identifiable par son adresse cryptographique.
+
+    Il est seulement intéressant pour l'utilisateur de choisir sous quel nom il apparait par défaut
+
+
+*** Mot de passe
+
+    C'est un outil permettant à la platforme de reconnaitre ses utilisateurs.
+
+    Nous préférons une signature cryptographie ou un mot de passe à usage unique
+    pour ne pas embarasser l'utilisateur d'avoir à se souvenir d'un mot de passe
+    different pour chaque platforme qu'il utilise.
+
+
 ** Interfaces
    
    Nous ne voulons pas limiter le logiciel à une seule interface.
@@ -83,6 +191,19 @@
 
 
 ** Vrac
+
+*** Introduction
+
+Avec l'arrivée d'internet, la société n'a cessé de se copier-coller dans ce nouvel espace.
+
+Cette nouvelle surface d'échange autorise l'émergence et la contemplation de nouvelles structures.
+
+Une structure particulièrement vivace - le sujet de cette reflexion - c'est le réseau social.
+
+Il est assujetti à un nouvel ensemble de règles, comme les platformes et les interfaces.
+
+Son potentiel : Aider à recoder l'information pour décoder le réél.
+
 
 *** Ne pas s'intéresser au transfert ni au stockage des données
 
