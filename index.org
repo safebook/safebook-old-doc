@@ -1,8 +1,38 @@
-#+TITLE: Un autre réseau social
+#+TITLE: Encore un autre réseau social
 #+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
 #+OPTIONS: toc:nil num:nil
 
-* [[introduction.html][Un réseau social mathématique]]
-* [[history.html][Histoire de la cryptographie]]
-* [[exploration.html][Tour d'horizon de l'écosystème]]
-* [[propositions.html][Idées]]
+** Enjeux
+
+  - Dépoluer internet
+  - Permettre au vivre-ensemble de s'épanouir
+
+    
+** Objectifs
+
+  - Faire un réseau vraiment collaboratif, où les données appartiennent vraiment aux utilisateurs.
+  - Un minimum de code mais des fonctionnalités puissantes. Être le plus autonome et complet possible.
+  - Avoir des règles claires et infaillibles pour définir les droits d'accès et de modification.
+
+
+** Structure  
+  
+  - Utilisateurs
+  - Communautés
+  - Messages
+  - Événements
+
+** Technologies
+
+   - Cryptographie (hashs, chiffrement symétrique et asymétrique, signatures)
+   - Pair-à-pair
+   - CRDTs
+   - Graphes
+   - Données sémantiques
+
+
+* Autres textes
+** [[file:introduction.html][Un réseau social mathématique]]
+** [[file:history.html][Histoire de la cryptographie]]
+** [[file:exploration.html][Tour d'horizon de l'écosystème]]
+** [[file:propositions.html][Idées]]
