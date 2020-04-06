@@ -1,4 +1,4 @@
-#+TITLE: Encore un autre réseau social
+#+TITLE: État des lieux
 #+HTML_HEAD: <link href="solarized-light.min.css" rel="stylesheet"></link>
 #+OPTIONS: num:nil
 
