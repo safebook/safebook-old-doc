@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-04-07 Tue 01:09 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Encore un autre réseau social</title>
+<meta name="generator" content="Org mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link href="solarized-light.min.css" rel="stylesheet"></link>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2019 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Encore un autre réseau social</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org2295cf4">Introduction</a></li>
+<li><a href="#org77d0040">Propriétés utiles des messages</a>
+<ul>
+<li><a href="#orgf6fee01">Privé (Chiffrement)</a></li>
+<li><a href="#orgabcd5e7">Authenticité (Signature)</a></li>
+</ul>
+</li>
+<li><a href="#org215fb84">Propriétés utiles des réseaux</a>
+<ul>
+<li><a href="#org6e3ba46">Trustless</a></li>
+<li><a href="#org01f322b">Trustfull</a></li>
+<li><a href="#orgba9edf8">Décentralised</a></li>
+<li><a href="#org9400fb4">Sans mot de passe</a></li>
+</ul>
+</li>
+<li><a href="#orgea34787">Types d'adresses</a></li>
+<li><a href="#orgaa56872">Types d'encodages</a></li>
+<li><a href="#orgeb02f5e">Types de messages</a></li>
+<li><a href="#orgec7c6f0">Types d'objets</a>
+<ul>
+<li><a href="#org3a3639f">Utilisateur</a></li>
+<li><a href="#org416351f">Message</a></li>
+<li><a href="#org57590a9">Evenement et communautés</a></li>
+</ul>
+</li>
+<li><a href="#org1d1020b">Techniques cryptographiques</a>
+<ul>
+<li>
+<ul>
+<li><a href="#org46880ae">Fonction de hachage</a></li>
+<li><a href="#org8089a86">Clés de chiffrement (symétrique)</a></li>
+<li><a href="#org06b8179">Clé de chiffrement (asymétrique)</a></li>
+<li><a href="#orgb2e4ef3">Clé de signature (asymétrique)</a></li>
+<li><a href="#org48d3d07">Arbre cryptographique</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgb162f57">Types de données</a>
+<ul>
+<li><a href="#org44e2cb3">Message isolé</a></li>
+<li><a href="#org2618557">Message pointant sur un ou des utilisateurs (émetteurs ou receveurs)</a></li>
+<li><a href="#org5610a9e">Message pointant sur un message</a></li>
+</ul>
+</li>
+<li><a href="#org12f093c">Vrac</a>
+<ul>
+<li><a href="#orgde948d0">Gaussian filter to query the server</a></li>
+<li><a href="#org59d25ea">Programmed message</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org2295cf4" class="outline-2">
+<h2 id="org2295cf4">Introduction</h2>
+<div class="outline-text-2" id="text-org2295cf4">
+<p>
+L'arrivée d'internet annonce la société virtuelle.
+</p>
+
+<p>
+Cette nouvel espace permet l'émergence de nouvelles structures.
+</p>
+
+<p>
+Une structure particulièrement vivace - le sujet de cette reflexion - c'est le réseau social.
+</p>
+
+<p>
+Il est assujetti à de nouvelles règles: les protocoles et les interfaces.
+</p>
+
+<p>
+Son potentiel est immense. Il organiser le réél, et peut être un tremplin pour l'action.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org77d0040" class="outline-2">
+<h2 id="org77d0040">Propriétés utiles des messages</h2>
+<div class="outline-text-2" id="text-org77d0040">
+</div>
+<div id="outline-container-orgf6fee01" class="outline-3">
+<h3 id="orgf6fee01">Privé (Chiffrement)</h3>
+<div class="outline-text-3" id="text-orgf6fee01">
+<p>
+Un chiffrement cryptographique garanti que seul les possesseurs de la clé de déchiffrement pouront le lire.
+</p>
+
+<p>
+Il permet de ne pas avoir à confier à un tiers la gestion de l'accès à l'information.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgabcd5e7" class="outline-3">
+<h3 id="orgabcd5e7">Authenticité (Signature)</h3>
+<div class="outline-text-3" id="text-orgabcd5e7">
+<p>
+Une signature cryptographique prouve que le message a bien été envoyé par l'utilisateur.
+</p>
+
+<p>
+Elle permet de se passer d'un tiers pour garantir l'authenticité des données.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org215fb84" class="outline-2">
+<h2 id="org215fb84">Propriétés utiles des réseaux</h2>
+<div class="outline-text-2" id="text-org215fb84">
+</div>
+<div id="outline-container-org6e3ba46" class="outline-3">
+<h3 id="org6e3ba46">Trustless</h3>
+<div class="outline-text-3" id="text-org6e3ba46">
+<p>
+Nous ne devrions pas avoir besoin de faire confiance au serveur
+pour ne pas lire et analyser nos message.
+</p>
+
+<p>
+Il devrait donc être impossible à un tiers de lire, ou modifier
+notre flux de communication. Pour cela nous utiliseront la cryptographie.
+</p>
+
+<p>
+Les données chiffrés devraient pouvoir être ouvertes à tous
+sans que cela puisse nous compromettre.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org01f322b" class="outline-3">
+<h3 id="org01f322b">Trustfull</h3>
+<div class="outline-text-3" id="text-org01f322b">
+<p>
+C'est un outil permettant à la platforme de reconnaitre ses utilisateurs.
+</p>
+
+<p>
+Nous n'avons pas besoin que l'utilisateur en choisisse un car il est déjà
+uniquement identifiable par son adresse cryptographique.
+</p>
+
+<p>
+Il est seulement intéressant pour l'utilisateur de choisir sous quel nom il apparait par défaut
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgba9edf8" class="outline-3">
+<h3 id="orgba9edf8">Décentralised</h3>
+<div class="outline-text-3" id="text-orgba9edf8">
+<p>
+Réseau décentralisé ou distribué.
+</p>
+
+<p>
+Les données appartiennent aux utilisateur et sont à proxmité d'eux.
+</p>
+
+<p>
+Les données sont naturellement stockées par l'utilisateur et par les noeuds les plus proches.
+</p>
+
+<p>
+Les moyens de redondances de prédilection suivent le graphe social (gossip)
+ou sont stocké par un ou plusieurs serveurs (décentralisation).
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org9400fb4" class="outline-3">
+<h3 id="org9400fb4">Sans mot de passe</h3>
+<div class="outline-text-3" id="text-org9400fb4">
+<p>
+Le mot de passe est juste un outil permettant à la platforme de reconnaitre ses utilisateurs.
+</p>
+
+<p>
+Nous préférons une signature cryptographie ou un mot de passe à usage unique
+pour ne pas embarasser l'utilisateur d'avoir à se souvenir d'un mot de passe
+different pour chaque platforme qu'il utilise.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgea34787" class="outline-2">
+<h2 id="orgea34787">Types d'adresses</h2>
+<div class="outline-text-2" id="text-orgea34787">
+<ul class="org-ul">
+<li>Clé publique</li>
+<li>Empreinte de clé publique (ex: SFGAftzSTztFSB8LMwsrdCKTyqGY6zr3sU).
+Est plus court qu'une clé publique, et ne la divulgue pas.</li>
+<li>Pseudo grace avec un système de 'DNS'</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgaa56872" class="outline-2">
+<h2 id="orgaa56872">Types d'encodages</h2>
+<div class="outline-text-2" id="text-orgaa56872">
+<ul class="org-ul">
+<li>Binary</li>
+<li>Base58</li>
+<li>Suite de mots (ex: give input convince decide dizzy tag flash spawn)</li>
+<li>QR Code</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgeb02f5e" class="outline-2">
+<h2 id="orgeb02f5e">Types de messages</h2>
+<div class="outline-text-2" id="text-orgeb02f5e">
+<ul class="org-ul">
+<li>En clair: contenu public</li>
+<li>Signé
+Message vers une <b>clé de vérification</b> (généralement associée à un utilisateur) et une <b>signature cryptographique</b> le rendant authentifiable</li>
+<li>Direct: Message to public key (M2PK)
+Message vers une <b>clé de déchiffrement asymétrique</b> permettant de le déchiffrer.</li>
+<li>Multiple: Message to public key (M2PK1PK2PK3&#x2026;)
+Message vers plusieurs <b>clé de déchiffrement asymétrique</b> permettant de le déchiffrer.</li>
+<li>Satoshi: Message to public key hash (M2PKH)
+Message vers une <b>empreinte d'adresse publique</b>, c'est à dire l'<b>empreinte</b> de la <b>clé de déchiffrement asymétrique</b> permettant de le déchiffrer.</li>
+<li>Zero: pas de métadata (exemples: bitmessage, minilock)
+Un message avec <b>zero information</b> est complétement illisible avant d'être dechiffré.
+Aucune information n'est disponible pour savoir quelle clé peut le déchiffrer.</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-orgec7c6f0" class="outline-2">
+<h2 id="orgec7c6f0">Types d'objets</h2>
+<div class="outline-text-2" id="text-orgec7c6f0">
+</div>
+<div id="outline-container-org3a3639f" class="outline-3">
+<h3 id="org3a3639f">Utilisateur</h3>
+<div class="outline-text-3" id="text-org3a3639f">
+<p>
+C'est l'avatar d'un utilisateur sur la platforme.
+</p>
+
+<p>
+C'est un noeud d'authorité du graphe.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org416351f" class="outline-3">
+<h3 id="org416351f">Message</h3>
+<div class="outline-text-3" id="text-org416351f">
+<p>
+C'est le ciment du réseau social et sa fonction.
+</p>
+
+<p>
+(Un message est aussi un noeud du graphe, il peut être la destination pour d'autres messages.)
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org57590a9" class="outline-3">
+<h3 id="org57590a9">Evenement et communautés</h3>
+<div class="outline-text-3" id="text-org57590a9">
+<p>
+Ce sont des singularités du réseau.
+</p>
+
+<p>
+Ils contiennent et se contenu par d'autres noeuds, des utilsateurs, messages, événements, communautés, &#x2026;
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org1d1020b" class="outline-2">
+<h2 id="org1d1020b">Techniques cryptographiques</h2>
+<div class="outline-text-2" id="text-org1d1020b">
+</div>
+<div id="outline-container-org46880ae" class="outline-4">
+<h4 id="org46880ae">Fonction de hachage</h4>
+<div class="outline-text-4" id="text-org46880ae">
+<p>
+Une fonction de hachage cryptographie donne l'<b>empreinte cryptographique</b> d'un message.
+</p>
+
+<p>
+L'empreinte cryptographique est suffisament longue et cryptique pour avoir ces deux propriétés :
+</p>
+
+<p>
+Aucun autre message calculable n'a la même empreinte cryptographique.
+</p>
+
+<p>
+Il n'est pas possible de retrouver le message seulement à partir de son empreinte.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org8089a86" class="outline-4">
+<h4 id="org8089a86">Clés de chiffrement (symétrique)</h4>
+<div class="outline-text-4" id="text-org8089a86">
+<p>
+Une <b>clé cryptographique</b> est un moyen de chiffrer (crypter) ou de déchiffrer des données.
+</p>
+
+<p>
+Une clé de chiffrement et de déchiffrement est dite <b>symétrique</b>.
+</p>
+
+<p>
+Ses possesseurs forment le groupe pouvant lire les messages chiffrés.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org06b8179" class="outline-4">
+<h4 id="org06b8179">Clé de chiffrement (asymétrique)</h4>
+<div class="outline-text-4" id="text-org06b8179">
+<p>
+Une <b>clé de chiffrement asymétrique</b> permet de chiffrer des messages mais pas de les déchiffrer.
+</p>
+
+<p>
+La <b>clé de déchiffrement</b> permet de génerer la <b>clé de chiffrement</b> correspondante.
+</p>
+
+<p>
+Ses possesseurs peuvent donc uniquement chiffrer des messages, sans pouvoir les relire.
+</p>
+
+<p>
+Seul le (ou les) possesseur(s) de la <b>clé de déchiffrement</b> correspondante a(ont) le pouvoir de les lire.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgb2e4ef3" class="outline-4">
+<h4 id="orgb2e4ef3">Clé de signature (asymétrique)</h4>
+<div class="outline-text-4" id="text-orgb2e4ef3">
+<p>
+Une <b>clé de signature cryptographique</b> de permet d'authentifier un message.
+</p>
+
+<p>
+Elle permet aussi de générer la <b>clé de verification cryptographique</b> correspondante.
+</p>
+
+<p>
+La <b>clé de vérification</b> peut être partagée afin de rendre possible la vérifaction des messages signés.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org48d3d07" class="outline-4">
+<h4 id="org48d3d07">Arbre cryptographique</h4>
+<div class="outline-text-4" id="text-org48d3d07">
+<p>
+Un <b>arbre cryptographique</b> utilise une <b>graine cryptographique</b> pour générer
+un ensemble de branches et feuilles qui peuvent toutes être utilisés comme <b>clés cryptographiques</b>
+</p>
+
+<p>
+Un graine cryptographique peut générer un arbre informatique infini d'adresses et de clés.
+</p>
+
+<p>
+Certaines clés peuvent servir à destocker (en dechiffrant) certaines informations chiffrés.
+</p>
+
+<p>
+Certaines clés peuvent servir pour bitcoin, litecoin, etc&#x2026;
+</p>
+
+<p>
+En partageant une graine cryptographique avec un ami, il est possible de dériver l'arbre chacun de son coté
+et de s'en servir comme clés de chiffrement ou comme points de rendez vous sans autres négociations.
+</p>
+
+<p>
+<a href="https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki">Hierarchical Deterministic Wallets</a> (BIP-32)
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgb162f57" class="outline-2">
+<h2 id="orgb162f57">Types de données</h2>
+<div class="outline-text-2" id="text-orgb162f57">
+</div>
+<div id="outline-container-org44e2cb3" class="outline-3">
+<h3 id="org44e2cb3">Message isolé</h3>
+</div>
+<div id="outline-container-org2618557" class="outline-3">
+<h3 id="org2618557">Message pointant sur un ou des utilisateurs (émetteurs ou receveurs)</h3>
+</div>
+<div id="outline-container-org5610a9e" class="outline-3">
+<h3 id="org5610a9e">Message pointant sur un message</h3>
+</div>
+</div>
+
+
+
+<div id="outline-container-org12f093c" class="outline-2">
+<h2 id="org12f093c">Vrac</h2>
+<div class="outline-text-2" id="text-org12f093c">
+</div>
+<div id="outline-container-orgde948d0" class="outline-3">
+<h3 id="orgde948d0">Gaussian filter to query the server</h3>
+<div class="outline-text-3" id="text-orgde948d0">
+<p>
+Do not ask the server full addresses
+use a filter or just the start of the string
+and ask fake addresses on top of it
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org59d25ea" class="outline-3">
+<h3 id="org59d25ea">Programmed message</h3>
+<div class="outline-text-3" id="text-org59d25ea">
+<p>
+Message we only want to send at a fixed time
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Created: 2020-04-07 Tue 01:09</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
